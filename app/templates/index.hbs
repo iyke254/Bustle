@@ -1,1 +1,8 @@
-{{outlet}}
+<ul>
+  {{#each model as |news|}}
+     <li>{{news.headline}}</li>
+    <p><img src={{news.image}} alt={{news.type}} ></p>
+     <p> {{news.description}}</p>
+     <p>By {{news.author}} at {{news.time}}</p>
+  {{/each}}
+</ul>
