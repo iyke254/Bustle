@@ -1,3 +1,26 @@
+
+<header>
+   <div class="navbar">
+      <ul class="nav">
+         <li class="item">
+            <a href="#">Home</a>
+         </li>
+         <li class="item">
+            <a href="#">Blog</a>
+         </li>
+         <li class="item">
+            <a href="#">About</a>
+         </li>
+         <li class="item">
+            <a href="" class="contact">{{#link-to 'contact'}}Contact Us{{/link-to}}</a>
+         </li>
+      </ul>
+      <div class="logo">
+         <img src="#">
+      </div>
+   </div>
+</header>
+
 <ul>
   {{#each model as |news|}}
      <li>{{news.headline}}</li>
@@ -6,3 +29,5 @@
      <p>By {{news.author}} at {{news.time}}</p>
   {{/each}}
 </ul>
+{{#link-to 'about'}}About Us{{/link-to}}
+{{#link-to 'contact'}}Contact Us{{/link-to}}
